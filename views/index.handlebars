@@ -1,0 +1,53 @@
+<h1 class="text-center">Burgers</h1>
+  <nav class="navbar navbar-dark bg-dark w-100">
+    <span class="navbar-brand h1 w-100 text-center">Burgers Eaten</span>
+  </nav>
+  <div class="card" style="width: 90%;">
+    {{#each burgers}}
+      {{#if devoured}}
+        <div class="card-body">
+          <div class="card text-center">
+            <h5 class="card-title">{{burger_name}}</h5>
+              <p class="card-text">You ate it</p>
+            </div>
+          </div>
+        </div>
+      {{/if}}
+    {{/each}}
+  </div>
+</div>
+
+
+
+
+  <nav class="navbar navbar-dark bg-dark w-100">
+    <span class="navbar-brand h1 w-100 text-center">Burgers to be eaten</span>
+  </nav>
+  <div class="card" style="width: 90%;">
+  {{#each burgers}}
+    {{#unless devoured}}
+      <div class="card-body">
+        <div class="card text-center ">
+          <h5 class="card-header">{{burger_name}}</h5>
+            <button type="button" class="eat btn btn-dark btn-sm " style="align: center;" data-id="{{this.id}}">Eat Da Burger</button>
+          </div>
+        </div>
+      </div>
+    {{/unless}}
+  {{/each}}
+</div>
+
+
+
+
+
+  <div class="card bg-primary text-center card-form"style="background-color:black ,color:red">
+    <div class="card-body" style="background-color: bisque;"style="item-align:center;"
+      <h2>Add a Burger</h2>
+      <form class="create-form">
+        <label for="burger_name">Burger Name</label>
+        <input type="text" id="newBurger" name="burger_name">
+        <button type="submit">Get It</button>
+      </form>
+    </div>
+  </div>

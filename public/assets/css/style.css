@@ -1,0 +1,39 @@
+
+body{
+  text-align: center;
+  font-size: large;
+  background-color: tomato;
+}
+li {
+  padding: 5px;
+  margin: 5px;
+  background: red;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(255, 0, 0);
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+button{
+  background-color: black;
+  color: white;
+}
+
+.card{
+  align-items: center;
+  width: auto;
+  
+}
+.card-body{
+  align-items: center;
+  width: 98%;
+}
